@@ -6,7 +6,7 @@ pipeline {
         stage('Compile') {
             steps {
                 echo 'Starting Java compilation...'
-                bat 'javac HelloWorld.java'
+                bat 'javac Helloworld.java'
                 echo 'Java compilation completed successfully!'
             }
         }
@@ -14,7 +14,7 @@ pipeline {
         stage('Run') {
             steps {
                 echo 'Executing Java program...'
-                bat 'java HelloWorld'
+                bat 'java Helloworld'
                 echo 'Java program executed successfully!'
             }
         }
